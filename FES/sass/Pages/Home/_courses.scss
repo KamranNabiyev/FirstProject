@@ -1,0 +1,91 @@
+.videolessons {
+  background-color: #f3f3eb;
+  .card {
+    display: inline-block;
+    transition: 0.4s;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 8px rgb(195, 195, 195);
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.4s;
+    }
+    .card-top {
+      position: relative;
+      width: 100%;
+
+      img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      .card-abs {
+        position: absolute;
+        bottom: -16px;
+        right: 10px;
+        div {
+          background-color: $main-color;
+          color: white;
+          padding: 4px 10px;
+          border-radius: 3px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .card-body {
+      padding-top: 10px;
+      .card-title {
+        font-size: 15px;
+        margin: 3px 0px;
+        margin-top: 8px;
+      }
+      .card-title2 {
+        font-size: 14px;
+        margin: 4px 0px;
+      }
+      .card-title3 {
+        font-size: 14px;
+        padding: 7px 15px 5px 15px;
+        position: absolute;
+        top: 16px;
+        left: 0;
+
+        color: white;
+        width: 100%;
+        // border-top-left-radius: 20px;
+        // border-top-right-radius: 20px;
+      }
+      .color1 {
+        background-color: $main-color;
+      }
+      .color2 {
+        background-color: rgb(134, 109, 0);
+      }
+      .color3 {
+        background-color: rgb(0, 118, 134);
+      }
+      .color4 {
+        background-color: rgb(0, 31, 134);
+      }
+      .color5 {
+        background-color: rgb(80, 65, 0);
+      }
+      .color6 {
+        background-color: rgb(3, 87, 7);
+      }
+      .color7 {
+        background-color: rgb(78, 36, 2);
+      }
+      .color8 {
+        background-color: rgb(0, 134, 7);
+      }
+      .author {
+        font-size: 15px;
+      }
+    }
+  }
+}

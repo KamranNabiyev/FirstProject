@@ -1,0 +1,69 @@
+.slider {
+  .slider-content {
+    background-color: white;
+  }
+  #carouselExampleFade {
+    .carousel-inner {
+      .carousel-item {
+        .bg-img {
+          background-position: center center;
+          background-size: cover;
+          transition: 3s;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          text-align: left;
+          background-position-x: 50%;
+          background-position-y: 50%;
+          -webkit-animation: zoomin 12s ease-in;
+          animation: zoomin 12s ease-in;
+          animation-fill-mode: forwards;
+          z-index: 14;
+
+          @-webkit-keyframes zoomin {
+            0% {
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+            100% {
+              -webkit-transform: scale(1.3);
+              transform: scale(1.3);
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: #ff00002e;
+            @media only screen and (max-height: 630px) {
+              height: 623px;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      .carousel-control-prev {
+        transform: translateX(10%);
+        transition: 0.4s;
+      }
+      .carousel-control-next {
+        transform: translateX(-10%);
+        transition: 0.4s;
+      }
+    }
+    .carousel-control-prev {
+      transform: translateX(-100%);
+      transition: 0.4s;
+      opacity: 1 !important;
+    }
+    .carousel-control-next {
+      transition: 0.4s;
+      transform: translateX(100%);
+      opacity: 1 !important;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.tests {
+  background-color: #ffffff;
+  width: 100%;
+  .card-body {
+    background-color: #f6f6eb;
+    border-top: 7px solid rgb(134, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #c3c3c3;
+    position: relative;
+    margin-bottom: 20px;
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card-title2 {
+      font-size: 18px;
+    }
+    .card-button {
+      display: flex;
+      justify-content: end;
+      a {
+        display: inline-block;
+        text-align: center;
+        background-color: #be0600;
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+    }
+    .car-abs {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: #be0600;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .color1 {
+      background-color: $main-color;
+    }
+    .color2 {
+      background-color:  rgb(134, 109, 0);
+
+    }
+    .color3 {
+      background-color:  rgb(0, 118, 134);
+    }
+    .color4 {
+      background-color:  rgb(0, 31, 134);
+    }
+    .color5 {
+      background-color:  rgb(80, 65, 0);
+    }
+    .color6 {
+      background-color:  rgb(3, 87, 7);
+    }
+    .color7 {
+      background-color:  rgb(78, 36, 2);
+    }
+    .color8 {
+      background-color:  rgb(0, 134, 7);
+    
+    }
+  }
+  .card-body.color1 {
+    border-top: 7px solid $main-color;
+  }
+  .card-body.color2 {
+    border-top: 7px solid rgb(134, 109, 0);
+  }
+  .card-body.color3 {
+    border-top: 7px solid rgb(0, 118, 134);
+  }
+  .card-body.color4 {
+    border-top: 7px solid rgb(0, 31, 134);
+  }
+  .card-body.color5 {
+    border-top: 7px solid rgb(80, 65, 0);
+  }
+  .card-body.color6 {
+    border-top: 7px solid rgb(3, 87, 7);
+  }
+  .card-body.color7 {
+    border-top: 7px solid rgb(78, 36, 2);
+  }
+  .card-body.color8 {
+    border-top: 7px solid rgb(0, 134, 7);
+  }
+  
+}
